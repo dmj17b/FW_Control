@@ -4,7 +4,7 @@ FROM ros:foxy
 ENV DISPLAY=172.18.240.1:0.0
 ENV DEBIAN_FRONTEND=noninteractive
 
-WORKDIR /ROSVICON
+WORKDIR /FW_Control
 
 
 # Installing basic requirements

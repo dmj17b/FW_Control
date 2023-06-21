@@ -15,6 +15,14 @@ RUN apt install x11-apps -y
 
 RUN apt install ros-foxy-desktop -y
 
+RUN apt install python3.8-venv -y
+RUN apt install python3-pip -y
+RUN python3 -m venv env
+ENV PATH="$PWD/env/bin:$PATH"
+
+RUN env/bin/pip install --upgrade pip
+RUN env/bin/pip install pyserial
+
 
 #Add terminal sourcing to .bashrc file
 RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
@@ -22,3 +30,4 @@ RUN echo "source /FW_Control/install/setup.bash" >> ~/.bashrc
 RUN echo "export ROS_DOMAIN_ID=0" >> ~/.bashrc
 RUN echo "export ROS_LOCALHOST_ONLY=1" >> ~/.bashrc
 
+# RUN source $PWD/env/bin/activate

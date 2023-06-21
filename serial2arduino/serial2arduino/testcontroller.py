@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
-
+from vicon_receiver.msg import Position
 class testcontroller(Node):
 
     def __init__(self):

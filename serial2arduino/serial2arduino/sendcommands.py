@@ -8,6 +8,8 @@ from rclpy.node import Node
 
 # Import the string message type
 from std_msgs.msg import String
+from fw_msgs.msg import CtrlInput
+
 
 # Defining the class as a node subclass (inherits from rclpy Node class)
 class SendCommands(Node):

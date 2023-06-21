@@ -35,7 +35,10 @@ class SendCommands(Node):
     # This is what happens every time the node receives data:
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
+<<<<<<< HEAD
         self.serial_port.write(msg.data.encode())
+=======
+>>>>>>> d46b8576e0e624a2c2a77d9eed72c269b5fa0971
 
 
 def main(args=None):

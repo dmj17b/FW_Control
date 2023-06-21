@@ -2,6 +2,8 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from fw_msgs.msg import CtrlInput
+
 
 class sendcommands(Node):
 

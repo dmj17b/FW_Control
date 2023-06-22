@@ -1,6 +1,6 @@
 # Import library for serial coms
 import serial
-
+import time
 #Import the rclpy library so that its "node" class can be used
 import rclpy
 from rclpy.node import Node
@@ -36,12 +36,14 @@ class SendCommands(Node):
 
     # This is what happens every time the node receives data:
     def listener_callback(self, msg):
+        ail = str(800)
+        elev = str(250)
+        thr = str(1000)
+        rud = str(500)
+        aux1 = str(0)
+        aux2 = str(0)
         self.get_logger().info('I heard: "%s"' % msg.data)
-<<<<<<< HEAD
-        self.serial_port.write(msg.data.encode())
-=======
->>>>>>> d46b8576e0e624a2c2a77d9eed72c269b5fa0971
-
+        self.serial_port.write((ail+' '+elev+' '+thr+' '+' '+rud+' '+aux1+' '+aux2).encode())
 
 def main(args=None):
     rclpy.init(args=args)

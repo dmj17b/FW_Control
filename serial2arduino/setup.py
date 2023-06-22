@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'examplecontroller = serial2arduino.testcontroller:main',
+            'testcontroller = serial2arduino.testcontroller:main',
             'sendcommands = serial2arduino.sendcommands:main',
         ],
     },

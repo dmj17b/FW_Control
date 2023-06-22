@@ -10,16 +10,32 @@ class testcontroller(Node):
     def __init__(self):
         #This is what the node will be named according to ros:
         super().__init__('testcontroller')
-        self.publisher_ = self.create_publisher(String,'stuff',10)
-        timer_period = 1
-        self.timer = self.create_timer(timer_period,self.timer_callback)
+
+        #Create publisher that will output control inputs for the aircraft
+        self.publisher_ = self.create_publisher(CtrlInput,'ctrl',10)
+
+        self.subscription = self.create_subscription(
+            Position,
+            '/vicon/TestStick/TestStick',
+            self.listener_callback,
+            10)
+        self.subscription  # prevent unused variable warning
 
 
-    def timer_callback(self):
-        msg = String()
-        msg.data = 'Hello World'
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: %s' % msg.data)
+    def listener_callback(self, msg : Position):
+        self.get_logger().info(f"X position = {msg.x_trans}")
+        self.publishInfo(msg)
+
+    def publishInfo(self,msg):
+        ctrl = CtrlInput()
+        ctrl.ail = 4.
+        ctrl.elev = 20.0
+        ctrl.thr = 500.
+        ctrl.rud = 250.
+        ctrl.aux1 = 420.
+        ctrl.aux2 = 69.
+        self.publisher_.publish(ctrl)
+        self.get_logger().info('Publishing: %f' % ctrl.ail)        
 
 def main(args=None):
     rclpy.init(args=args)

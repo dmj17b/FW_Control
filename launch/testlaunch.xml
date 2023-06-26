@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="vicon_receiver" exec="vicon_client" output="screen">
+        <param name="hostname" value="192.168.1.119"/>
+        <param name="buffer_size" value="200"/>
+        <param name="namespace" value="vicon"/>
+    </node>
+    <node pkg="serial2arduino" exec="testcontroller" name="controller"/>
+    <node pkg="serial2arduino" exec="sendcommands" name="sendcommands"/>
+</launch>
+

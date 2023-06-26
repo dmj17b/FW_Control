@@ -23,19 +23,22 @@ class testcontroller(Node):
 
 
     def listener_callback(self, msg : Position):
-        self.get_logger().info(f"X position = {msg.x_trans}")
+        self.get_logger().info(f"Z position = {msg.z_trans}")
         self.publishInfo(msg)
 
-    def publishInfo(self,msg):
+    def publishInfo(self,msg:Position):
         ctrl = CtrlInput()
-        ctrl.ail = 4.
+        ctrl.ail = 10.
         ctrl.elev = 20.0
         ctrl.thr = 500.
         ctrl.rud = 250.
         ctrl.aux1 = 420.
         ctrl.aux2 = 69.
+        if msg.z_trans > 100:
+            ctrl.elev=1000.
         self.publisher_.publish(ctrl)
-        self.get_logger().info('Publishing: %f' % ctrl.ail)        
+        
+        self.get_logger().info('Publishing: %f' % ctrl.elev)        
 
 def main(args=None):
     rclpy.init(args=args)

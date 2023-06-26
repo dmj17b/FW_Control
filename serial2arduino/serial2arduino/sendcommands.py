@@ -28,22 +28,22 @@ class SendCommands(Node):
         # Note: the subscriber does not need any timer definition. The callback gets
         # called as soon as a message is received
         self.subscription = self.create_subscription(
-            String,
-            'stuff',
+            CtrlInput,
+            'ctrl',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
 
     # This is what happens every time the node receives data:
-    def listener_callback(self, msg):
-        ail = str(800)
-        elev = str(250)
-        thr = str(1000)
-        rud = str(500)
-        aux1 = str(0)
-        aux2 = str(0)
-        self.get_logger().info('I heard: "%s"' % msg.data)
-        self.serial_port.write((ail+' '+elev+' '+thr+' '+' '+rud+' '+aux1+' '+aux2).encode())
+    def listener_callback(self, msg : CtrlInput):
+        ail = str(msg.ail)
+        elev = str(msg.elev)
+        thr = str(msg.thr)
+        rud = str(msg.rud)
+        aux1 = str(msg.aux1)
+        aux2 = str(msg.aux2)
+        self.get_logger().info('Control Input Received')
+        self.serial_port.write((ail+''+elev+''+thr+''+''+rud+''+aux1+''+aux2).encode())
 
 def main(args=None):
     rclpy.init(args=args)

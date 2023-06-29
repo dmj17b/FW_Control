@@ -36,14 +36,14 @@ class SendCommands(Node):
 
     # This is what happens every time the node receives data:
     def listener_callback(self, msg : CtrlInput):
-        ail = str(msg.ail)
-        elev = str(msg.elev)
-        thr = str(msg.thr)
-        rud = str(msg.rud)
-        aux1 = str(msg.aux1)
-        aux2 = str(msg.aux2)
+        ail = str(int(msg.ail))
+        elev = str(int(msg.elev))
+        thr = str(int(msg.thr))
+        rud = str(int(msg.rud))
+        aux1 = str(int(msg.aux1))
+        aux2 = str(int(msg.aux2))
         self.get_logger().info('Control Input Received')
-        self.serial_port.write((ail+''+elev+''+thr+''+''+rud+''+aux1+''+aux2).encode())
+        self.serial_port.write((ail+' '+elev+' '+thr+' '+' '+rud+' '+aux1+' '+aux2+' ').encode())
 
 def main(args=None):
     rclpy.init(args=args)

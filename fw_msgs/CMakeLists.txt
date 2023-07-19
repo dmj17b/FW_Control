@@ -11,6 +11,9 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CtrlInput.msg"
+  "msg/PositionEuler.msg"
+  "msg/StateEstEuler.msg"
+  "msg/StateEstQuat.msg"
 )
 
 # Default to C++14

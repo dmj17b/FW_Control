@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from fw_msgs/msg/PositionEuler.msg
+// generated code does not contain a copyright notice
+
+
+module fw_msgs {
+  module msg {
+    struct PositionEuler {
+      float x_trans;
+
+      float y_trans;
+
+      float z_trans;
+
+      float roll;
+
+      float pitch;
+
+      float yaw;
+    };
+  };
+};

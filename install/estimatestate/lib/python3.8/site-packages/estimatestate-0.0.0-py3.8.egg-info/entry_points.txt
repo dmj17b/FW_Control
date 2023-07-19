@@ -1,0 +1,3 @@
+[console_scripts]
+pubtransform = estimatestate.PublishTransform:main
+

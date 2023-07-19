@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/estimatestate/estimatestate.egg-info
+writing ../build/estimatestate/estimatestate.egg-info/PKG-INFO
+writing dependency_links to ../build/estimatestate/estimatestate.egg-info/dependency_links.txt
+writing entry points to ../build/estimatestate/estimatestate.egg-info/entry_points.txt
+writing requirements to ../build/estimatestate/estimatestate.egg-info/requires.txt
+writing top-level names to ../build/estimatestate/estimatestate.egg-info/top_level.txt
+writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+reading manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /FW_Control/src/build/estimatestate/build
+creating /FW_Control/src/build/estimatestate/build/lib
+creating /FW_Control/src/build/estimatestate/build/lib/estimatestate
+copying estimatestate/__init__.py -> /FW_Control/src/build/estimatestate/build/lib/estimatestate
+copying estimatestate/PublishTransform.py -> /FW_Control/src/build/estimatestate/build/lib/estimatestate
+running install
+running install_lib
+creating /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate
+copying /FW_Control/src/build/estimatestate/build/lib/estimatestate/__init__.py -> /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate
+copying /FW_Control/src/build/estimatestate/build/lib/estimatestate/PublishTransform.py -> /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate
+byte-compiling /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate/__init__.py to __init__.cpython-38.pyc
+byte-compiling /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate/PublishTransform.py to PublishTransform.cpython-38.pyc
+running install_data
+creating /FW_Control/src/install/estimatestate/share/ament_index
+creating /FW_Control/src/install/estimatestate/share/ament_index/resource_index
+creating /FW_Control/src/install/estimatestate/share/ament_index/resource_index/packages
+copying resource/estimatestate -> /FW_Control/src/install/estimatestate/share/ament_index/resource_index/packages
+copying package.xml -> /FW_Control/src/install/estimatestate/share/estimatestate
+running install_egg_info
+Copying ../build/estimatestate/estimatestate.egg-info to /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info
+running install_scripts
+Installing pubtransform script to /FW_Control/src/install/estimatestate/lib/estimatestate
+writing list of installed files to '/FW_Control/src/build/estimatestate/install.log'

@@ -1,0 +1,232 @@
+[0.013s] Invoking command in '/FW_Control/src/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy /usr/bin/cmake /FW_Control/src/ros2-vicon-receiver/vicon_receiver -DCMAKE_INSTALL_PREFIX=/FW_Control/src/install/vicon_receiver
+[0.037s] -- The C compiler identification is GNU 9.4.0
+[0.064s] -- The CXX compiler identification is GNU 9.4.0
+[0.066s] -- Check for working C compiler: /usr/bin/cc
+[0.100s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.100s] -- Detecting C compiler ABI info
+[0.133s] -- Detecting C compiler ABI info - done
+[0.138s] -- Detecting C compile features
+[0.139s] -- Detecting C compile features - done
+[0.140s] -- Check for working CXX compiler: /usr/bin/c++
+[0.178s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.179s] -- Detecting CXX compiler ABI info
+[0.218s] -- Detecting CXX compiler ABI info - done
+[0.223s] -- Detecting CXX compile features
+[0.224s] -- Detecting CXX compile features - done
+[0.225s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.238s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.238s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.326s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.328s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.332s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.386s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.403s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.463s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.495s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.496s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.496s] -- Looking for pthread.h
+[0.532s] -- Looking for pthread.h - found
+[0.532s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.569s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.569s] -- Looking for pthread_create in pthreads
+[0.598s] -- Looking for pthread_create in pthreads - not found
+[0.598s] -- Looking for pthread_create in pthread
+[0.632s] -- Looking for pthread_create in pthread - found
+[0.633s] -- Found Threads: TRUE  
+[0.717s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread 
+[0.729s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.785s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.847s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.851s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.862s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[0.863s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.876s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[0.877s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.877s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[0.877s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[0.887s] -- Found PythonExtra: .so  
+[0.909s] -- Found rmw_fastrtps_cpp: 1.3.1 (/opt/ros/foxy/share/rmw_fastrtps_cpp/cmake)
+[0.987s] -- Configuring done
+[1.003s] -- Generating done
+[1.005s] -- Build files have been written to: /FW_Control/src/build/vicon_receiver
+[1.010s] Invoked command in '/FW_Control/src/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy /usr/bin/cmake /FW_Control/src/ros2-vicon-receiver/vicon_receiver -DCMAKE_INSTALL_PREFIX=/FW_Control/src/install/vicon_receiver
+[1.011s] Invoking command in '/FW_Control/src/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy /usr/bin/cmake --build /FW_Control/src/build/vicon_receiver -- -j24 -l24
+[1.033s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.033s] [35m[1mScanning dependencies of target vicon_receiver__cpp[0m
+[1.038s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.166s] [  5%] Built target vicon_receiver__cpp
+[1.167s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_generator_c[0m
+[1.172s] [ 11%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.172s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.173s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.175s] [ 17%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position__functions.c.o[0m
+[1.212s] [ 20%] [32m[1mLinking C shared library libvicon_receiver__rosidl_generator_c.so[0m
+[1.231s] [ 20%] Built target vicon_receiver__rosidl_generator_c
+[1.237s] [ 26%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.237s] [ 26%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.282s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_introspection_cpp[0m
+[1.286s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_fastrtps_cpp[0m
+[1.290s] [ 29%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vicon_receiver/msg/detail/position__type_support.cpp.o[0m
+[1.293s] [ 32%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vicon_receiver/msg/detail/dds_fastrtps/position__type_support.cpp.o[0m
+[1.331s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_cpp[0m
+[1.331s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_c[0m
+[1.335s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_introspection_c[0m
+[1.337s] [ 35%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_c.dir/rosidl_typesupport_c/vicon_receiver/msg/position__type_support.cpp.o[0m
+[1.339s] [ 38%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vicon_receiver/msg/position__type_support.cpp.o[0m
+[1.342s] [ 41%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vicon_receiver/msg/detail/position__type_support.c.o[0m
+[1.353s] [ 44%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_c.so[0m
+[1.359s] [ 47%] [32m[1mLinking C shared library libvicon_receiver__rosidl_typesupport_introspection_c.so[0m
+[1.373s] [ 47%] Built target vicon_receiver__rosidl_typesupport_c
+[1.374s] [ 47%] Built target vicon_receiver__rosidl_typesupport_introspection_c
+[1.423s] [ 50%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_introspection_cpp.so[0m
+[1.454s] [ 50%] Built target vicon_receiver__rosidl_typesupport_introspection_cpp
+[1.455s] [ 52%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_cpp.so[0m
+[1.474s] [ 52%] Built target vicon_receiver__rosidl_typesupport_cpp
+[1.487s] [ 55%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.528s] [ 55%] Built target vicon_receiver__rosidl_typesupport_fastrtps_cpp
+[1.533s] [ 58%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.632s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_fastrtps_c[0m
+[1.639s] [ 61%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vicon_receiver/msg/detail/position__type_support_c.cpp.o[0m
+[1.807s] [ 64%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_fastrtps_c.so[0m
+[1.848s] [ 64%] Built target vicon_receiver__rosidl_typesupport_fastrtps_c
+[1.853s] [35m[1mScanning dependencies of target vicon_receiver[0m
+[1.857s] [ 64%] Built target vicon_receiver
+[1.862s] [35m[1mScanning dependencies of target vicon_receiver__py[0m
+[1.862s] [35m[1mScanning dependencies of target vicon_client[0m
+[1.867s] [ 67%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.884s] [ 73%] [32mBuilding CXX object CMakeFiles/vicon_client.dir/src/vicon_receiver/publisher.cpp.o[0m
+[1.884s] [ 73%] [32mBuilding CXX object CMakeFiles/vicon_client.dir/src/vicon_receiver/communicator.cpp.o[0m
+[2.042s] [ 73%] Built target vicon_receiver__py
+[2.047s] [35m[1mScanning dependencies of target vicon_receiver__python[0m
+[2.056s] [ 76%] [32mBuilding C object CMakeFiles/vicon_receiver__python.dir/rosidl_generator_py/vicon_receiver/msg/_position_s.c.o[0m
+[2.102s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/vicon_receiver/libvicon_receiver__python.so[0m
+[2.122s] [ 79%] Built target vicon_receiver__python
+[2.130s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.130s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_c__pyext[0m
+[2.130s] [35m[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_introspection_c__pyext[0m
+[2.147s] [ 88%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_c.c.o[0m
+[2.147s] [ 88%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.147s] [ 88%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.186s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.191s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.201s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[2.203s] [ 97%] Built target vicon_receiver__rosidl_typesupport_introspection_c__pyext
+[2.218s] [ 97%] Built target vicon_receiver__rosidl_typesupport_c__pyext
+[2.227s] [ 97%] Built target vicon_receiver__rosidl_typesupport_fastrtps_c__pyext
+[3.789s] [100%] [32m[1mLinking CXX executable vicon_client[0m
+[3.896s] [100%] Built target vicon_client
+[3.902s] Invoked command in '/FW_Control/src/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy /usr/bin/cmake --build /FW_Control/src/build/vicon_receiver -- -j24 -l24
+[3.925s] Invoking command in '/FW_Control/src/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy /usr/bin/cmake --install /FW_Control/src/build/vicon_receiver
+[3.930s] -- Install configuration: ""
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/rosidl_interfaces/vicon_receiver
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__functions.c
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__struct.h
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__functions.h
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__type_support.h
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_generator_c__visibility_control.h
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/position.h
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/library_path.sh
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/library_path.dsv
+[3.930s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_c.so
+[3.931s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_c.so" to ""
+[3.931s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver
+[3.931s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg
+[3.931s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_c.so
+[3.931s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_c.so" to ""
+[3.931s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver
+[3.931s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg
+[3.931s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/dds_fastrtps
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.931s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so
+[3.932s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__type_support.c
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_introspection_c.h
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_c.so
+[3.932s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_c.so" to ""
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_c.so
+[3.932s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_c.so" to ""
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__traits.hpp
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__builder.hpp
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__struct.hpp
+[3.932s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/position.hpp
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver
+[3.932s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg
+[3.933s] -- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__type_support.cpp
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_cpp.so
+[3.933s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_cpp.so" to ""
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_cpp.so
+[3.933s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_cpp.so" to ""
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/pythonpath.sh
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/pythonpath.dsv
+[3.933s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/__init__.py
+[3.949s] Compiling '/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/__init__.py'...
+[3.950s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg
+[3.951s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg/_position.py
+[3.951s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg/__init__.py
+[3.951s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg/_position_s.c
+[3.951s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[3.951s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[3.951s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[3.951s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[3.951s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[3.952s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[3.952s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__python.so
+[3.952s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__python.so" to ""
+[3.952s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/msg/Position.idl
+[3.952s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/msg/Position.msg
+[3.952s] -- Installing: /FW_Control/src/install/vicon_receiver/lib/vicon_receiver/vicon_client
+[3.954s] -- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/vicon_receiver/vicon_client" to ""
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver//launch
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver//launch/client.launch.py
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/package_run_dependencies/vicon_receiver
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/parent_prefix_path/vicon_receiver
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/ament_prefix_path.sh
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/ament_prefix_path.dsv
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/path.sh
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/path.dsv
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.bash
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.sh
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.zsh
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.dsv
+[3.954s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/package.dsv
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/packages/vicon_receiver
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_generator_cExport.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_generator_cExport-noconfig.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport-noconfig.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_generator_cppExport.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport-noconfig.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake-extras.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_libraries-extras.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_targets-extras.cmake
+[3.955s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.956s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.956s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.956s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiverConfig.cmake
+[3.956s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiverConfig-version.cmake
+[3.956s] -- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/package.xml
+[3.958s] Invoked command in '/FW_Control/src/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy /usr/bin/cmake --install /FW_Control/src/build/vicon_receiver

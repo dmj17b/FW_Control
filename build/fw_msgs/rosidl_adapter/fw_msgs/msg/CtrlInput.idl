@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from fw_msgs/msg/CtrlInput.msg
+// generated code does not contain a copyright notice
+
+
+module fw_msgs {
+  module msg {
+    struct CtrlInput {
+      float ail;
+
+      float elev;
+
+      float thr;
+
+      float rud;
+
+      float aux1;
+
+      float aux2;
+    };
+  };
+};

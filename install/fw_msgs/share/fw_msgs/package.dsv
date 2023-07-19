@@ -1,0 +1,14 @@
+source;share/fw_msgs/hook/cmake_prefix_path.ps1
+source;share/fw_msgs/hook/cmake_prefix_path.dsv
+source;share/fw_msgs/hook/cmake_prefix_path.sh
+source;share/fw_msgs/hook/ld_library_path_lib.ps1
+source;share/fw_msgs/hook/ld_library_path_lib.dsv
+source;share/fw_msgs/hook/ld_library_path_lib.sh
+source;share/fw_msgs/hook/pythonpath.ps1
+source;share/fw_msgs/hook/pythonpath.dsv
+source;share/fw_msgs/hook/pythonpath.sh
+source;share/fw_msgs/local_setup.bash
+source;share/fw_msgs/local_setup.dsv
+source;share/fw_msgs/local_setup.ps1
+source;share/fw_msgs/local_setup.sh
+source;share/fw_msgs/local_setup.zsh

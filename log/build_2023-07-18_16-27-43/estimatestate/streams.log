@@ -1,0 +1,21 @@
+[0.322s] Invoking command in '/FW_Control/src/estimatestate': PYTHONPATH=/FW_Control/src/build/estimatestate/prefix_override:/FW_Control/src/install/estimatestate/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/estimatestate build --build-base /FW_Control/src/build/estimatestate/build install --record /FW_Control/src/build/estimatestate/install.log --install-scripts $base/lib/estimatestate --single-version-externally-managed
+[0.405s] running egg_info
+[0.406s] writing ../build/estimatestate/estimatestate.egg-info/PKG-INFO
+[0.406s] writing dependency_links to ../build/estimatestate/estimatestate.egg-info/dependency_links.txt
+[0.406s] writing entry points to ../build/estimatestate/estimatestate.egg-info/entry_points.txt
+[0.406s] writing requirements to ../build/estimatestate/estimatestate.egg-info/requires.txt
+[0.406s] writing top-level names to ../build/estimatestate/estimatestate.egg-info/top_level.txt
+[0.421s] reading manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+[0.422s] writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+[0.422s] running build
+[0.422s] running build_py
+[0.422s] running install
+[0.422s] running install_lib
+[0.423s] running install_data
+[0.423s] running install_egg_info
+[0.424s] removing '/FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info' (and everything under it)
+[0.424s] Copying ../build/estimatestate/estimatestate.egg-info to /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info
+[0.424s] running install_scripts
+[0.432s] Installing pubtransform script to /FW_Control/src/install/estimatestate/lib/estimatestate
+[0.432s] writing list of installed files to '/FW_Control/src/build/estimatestate/install.log'
+[0.442s] Invoked command in '/FW_Control/src/estimatestate' returned '0': PYTHONPATH=/FW_Control/src/build/estimatestate/prefix_override:/FW_Control/src/install/estimatestate/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/estimatestate build --build-base /FW_Control/src/build/estimatestate/build install --record /FW_Control/src/build/estimatestate/install.log --install-scripts $base/lib/estimatestate --single-version-externally-managed

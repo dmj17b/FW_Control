@@ -1,0 +1,706 @@
+[0.000000] (-) TimerEvent: {}
+[0.000079] (estimatestate) JobQueued: {'identifier': 'estimatestate', 'dependencies': OrderedDict()}
+[0.000119] (fw_msgs) JobQueued: {'identifier': 'fw_msgs', 'dependencies': OrderedDict()}
+[0.000127] (vicon_receiver) JobQueued: {'identifier': 'vicon_receiver', 'dependencies': OrderedDict()}
+[0.000134] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict([('vicon_receiver', '/FW_Control/src/install/vicon_receiver')])}
+[0.000142] (serial2arduino) JobQueued: {'identifier': 'serial2arduino', 'dependencies': OrderedDict([('fw_msgs', '/FW_Control/src/install/fw_msgs')])}
+[0.000150] (fw_msgs) JobStarted: {'identifier': 'fw_msgs'}
+[0.007113] (vicon_receiver) JobStarted: {'identifier': 'vicon_receiver'}
+[0.010070] (estimatestate) JobStarted: {'identifier': 'estimatestate'}
+[0.015629] (fw_msgs) JobProgress: {'identifier': 'fw_msgs', 'progress': 'cmake'}
+[0.015802] (fw_msgs) Command: {'cmd': ['/usr/bin/cmake', '/FW_Control/src/fw_msgs', '-DCMAKE_INSTALL_PREFIX=/FW_Control/src/install/fw_msgs'], 'cwd': '/FW_Control/src/build/fw_msgs', 'env': OrderedDict([('HOSTNAME', 'orl1-US-Desktop-Aegis-RS'), ('GIT_ASKPASS', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/FW_Control'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/FW_Control/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-823d8eb82e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/FW_Control/src/build/fw_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy')]), 'shell': False}
+[0.018100] (vicon_receiver) JobProgress: {'identifier': 'vicon_receiver', 'progress': 'cmake'}
+[0.018507] (vicon_receiver) Command: {'cmd': ['/usr/bin/cmake', '/FW_Control/src/ros2-vicon-receiver/vicon_receiver', '-DCMAKE_INSTALL_PREFIX=/FW_Control/src/install/vicon_receiver'], 'cwd': '/FW_Control/src/build/vicon_receiver', 'env': OrderedDict([('HOSTNAME', 'orl1-US-Desktop-Aegis-RS'), ('GIT_ASKPASS', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/FW_Control'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/FW_Control/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-823d8eb82e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/FW_Control/src/build/vicon_receiver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy')]), 'shell': False}
+[0.044288] (fw_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.044591] (vicon_receiver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.070700] (fw_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.070854] (vicon_receiver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.072831] (vicon_receiver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.072928] (fw_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.099551] (-) TimerEvent: {}
+[0.106786] (fw_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.106929] (vicon_receiver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.107127] (fw_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.107201] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.140332] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.140688] (fw_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.145479] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.145641] (fw_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.145705] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.145837] (fw_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.146892] (vicon_receiver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.147060] (fw_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.185176] (vicon_receiver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.185341] (fw_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.185800] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.186018] (fw_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199708] (-) TimerEvent: {}
+[0.224812] (fw_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.225005] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.230246] (fw_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.230471] (fw_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.230620] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.230801] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.231769] (fw_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.232219] (vicon_receiver) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.245311] (vicon_receiver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.245473] (vicon_receiver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.245529] (fw_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.245590] (fw_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.285592] (estimatestate) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/estimatestate', 'build', '--build-base', '/FW_Control/src/build/estimatestate/build', 'install', '--record', '/FW_Control/src/build/estimatestate/install.log', '--install-scripts', '$base/lib/estimatestate', '--single-version-externally-managed'], 'cwd': '/FW_Control/src/estimatestate', 'env': {'HOSTNAME': 'orl1-US-Desktop-Aegis-RS', 'GIT_ASKPASS': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/FW_Control', 'TERM_PROGRAM_VERSION': '1.79.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/FW_Control/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':2', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-823d8eb82e.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy', 'DEBIAN_FRONTEND': 'noninteractive', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X4', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/FW_Control/src/build/estimatestate', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/FW_Control/src/build/estimatestate/prefix_override:/FW_Control/src/install/estimatestate/lib/python3.8/site-packages:/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs'}, 'shell': False}
+[0.299767] (-) TimerEvent: {}
+[0.333157] (vicon_receiver) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.335228] (vicon_receiver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.339058] (vicon_receiver) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.350765] (fw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.354647] (fw_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.372777] (estimatestate) StdoutLine: {'line': b'running egg_info\n'}
+[0.372965] (estimatestate) StdoutLine: {'line': b'creating ../build/estimatestate/estimatestate.egg-info\n'}
+[0.373033] (estimatestate) StdoutLine: {'line': b'writing ../build/estimatestate/estimatestate.egg-info/PKG-INFO\n'}
+[0.373095] (estimatestate) StdoutLine: {'line': b'writing dependency_links to ../build/estimatestate/estimatestate.egg-info/dependency_links.txt\n'}
+[0.373165] (estimatestate) StdoutLine: {'line': b'writing entry points to ../build/estimatestate/estimatestate.egg-info/entry_points.txt\n'}
+[0.373216] (estimatestate) StdoutLine: {'line': b'writing requirements to ../build/estimatestate/estimatestate.egg-info/requires.txt\n'}
+[0.373264] (estimatestate) StdoutLine: {'line': b'writing top-level names to ../build/estimatestate/estimatestate.egg-info/top_level.txt\n'}
+[0.373831] (estimatestate) StdoutLine: {'line': b"writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'\n"}
+[0.388935] (estimatestate) StdoutLine: {'line': b"reading manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'\n"}
+[0.389206] (estimatestate) StdoutLine: {'line': b"writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'\n"}
+[0.389280] (estimatestate) StdoutLine: {'line': b'running build\n'}
+[0.389344] (estimatestate) StdoutLine: {'line': b'running build_py\n'}
+[0.389421] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/build/estimatestate/build\n'}
+[0.389481] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/build/estimatestate/build/lib\n'}
+[0.389539] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/build/estimatestate/build/lib/estimatestate\n'}
+[0.389588] (estimatestate) StdoutLine: {'line': b'copying estimatestate/__init__.py -> /FW_Control/src/build/estimatestate/build/lib/estimatestate\n'}
+[0.389635] (estimatestate) StdoutLine: {'line': b'copying estimatestate/PublishTransform.py -> /FW_Control/src/build/estimatestate/build/lib/estimatestate\n'}
+[0.389683] (estimatestate) StdoutLine: {'line': b'running install\n'}
+[0.389926] (estimatestate) StdoutLine: {'line': b'running install_lib\n'}
+[0.390358] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate\n'}
+[0.390419] (estimatestate) StdoutLine: {'line': b'copying /FW_Control/src/build/estimatestate/build/lib/estimatestate/__init__.py -> /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate\n'}
+[0.390477] (estimatestate) StdoutLine: {'line': b'copying /FW_Control/src/build/estimatestate/build/lib/estimatestate/PublishTransform.py -> /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate\n'}
+[0.390701] (estimatestate) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate/__init__.py to __init__.cpython-38.pyc\n'}
+[0.391194] (estimatestate) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate/PublishTransform.py to PublishTransform.cpython-38.pyc\n'}
+[0.391498] (estimatestate) StdoutLine: {'line': b'running install_data\n'}
+[0.391689] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/install/estimatestate/share/ament_index\n'}
+[0.391758] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/install/estimatestate/share/ament_index/resource_index\n'}
+[0.391815] (estimatestate) StdoutLine: {'line': b'creating /FW_Control/src/install/estimatestate/share/ament_index/resource_index/packages\n'}
+[0.391872] (estimatestate) StdoutLine: {'line': b'copying resource/estimatestate -> /FW_Control/src/install/estimatestate/share/ament_index/resource_index/packages\n'}
+[0.391920] (estimatestate) StdoutLine: {'line': b'copying package.xml -> /FW_Control/src/install/estimatestate/share/estimatestate\n'}
+[0.391966] (estimatestate) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.392622] (estimatestate) StdoutLine: {'line': b'Copying ../build/estimatestate/estimatestate.egg-info to /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info\n'}
+[0.392928] (estimatestate) StdoutLine: {'line': b'running install_scripts\n'}
+[0.393351] (vicon_receiver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.398351] (fw_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.399825] (-) TimerEvent: {}
+[0.400975] (estimatestate) StdoutLine: {'line': b'Installing pubtransform script to /FW_Control/src/install/estimatestate/lib/estimatestate\n'}
+[0.401133] (estimatestate) StdoutLine: {'line': b"writing list of installed files to '/FW_Control/src/build/estimatestate/install.log'\n"}
+[0.410044] (vicon_receiver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.411014] (estimatestate) CommandEnded: {'returncode': 0}
+[0.416146] (fw_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.417738] (estimatestate) JobEnded: {'identifier': 'estimatestate', 'rc': 0}
+[0.456250] (vicon_receiver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.459518] (fw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.470385] (vicon_receiver) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.499988] (-) TimerEvent: {}
+[0.501366] (fw_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.501984] (vicon_receiver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.502882] (vicon_receiver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.503291] (vicon_receiver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.518318] (fw_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.538914] (vicon_receiver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.539087] (vicon_receiver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.576153] (vicon_receiver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.576311] (vicon_receiver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.583045] (fw_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[0.600140] (-) TimerEvent: {}
+[0.604889] (vicon_receiver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.605090] (vicon_receiver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.638949] (vicon_receiver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.639747] (vicon_receiver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.644714] (fw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.648535] (fw_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.660562] (fw_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.661534] (fw_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[0.674674] (fw_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.674830] (fw_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.674901] (fw_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.674955] (fw_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[0.685675] (fw_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.700279] (-) TimerEvent: {}
+[0.707305] (fw_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.719446] (fw_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.720233] (fw_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.720653] (fw_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.723106] (fw_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.724190] (vicon_receiver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread \n'}
+[0.736040] (vicon_receiver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.739083] (fw_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.740322] (fw_msgs) StdoutLine: {'line': b'-- Build files have been written to: /FW_Control/src/build/fw_msgs\n'}
+[0.745068] (fw_msgs) CommandEnded: {'returncode': 0}
+[0.746749] (fw_msgs) JobProgress: {'identifier': 'fw_msgs', 'progress': 'build'}
+[0.746799] (fw_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/FW_Control/src/build/fw_msgs', '--', '-j24', '-l24'], 'cwd': '/FW_Control/src/build/fw_msgs', 'env': OrderedDict([('HOSTNAME', 'orl1-US-Desktop-Aegis-RS'), ('GIT_ASKPASS', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/FW_Control'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/FW_Control/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-823d8eb82e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/FW_Control/src/build/fw_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy')]), 'shell': False}
+[0.768115] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__cpp\x1b[0m\n'}
+[0.768243] (fw_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.773088] (fw_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.792020] (vicon_receiver) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[0.800435] (-) TimerEvent: {}
+[0.854446] (vicon_receiver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.857748] (vicon_receiver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.869519] (vicon_receiver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.870467] (vicon_receiver) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[0.883543] (vicon_receiver) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.883685] (vicon_receiver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.883741] (vicon_receiver) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.883793] (vicon_receiver) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[0.894362] (vicon_receiver) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.900582] (-) TimerEvent: {}
+[0.916298] (vicon_receiver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 1.3.1 (/opt/ros/foxy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.925979] (fw_msgs) StdoutLine: {'line': b'[  3%] Built target fw_msgs__cpp\n'}
+[0.931330] (fw_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.931458] (fw_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.931582] (fw_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.931793] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.938148] (fw_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_generator_c.dir/rosidl_generator_c/fw_msgs/msg/detail/position_euler__functions.c.o\x1b[0m\n'}
+[0.938242] (fw_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_generator_c.dir/rosidl_generator_c/fw_msgs/msg/detail/ctrl_input__functions.c.o\x1b[0m\n'}
+[0.938614] (fw_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_generator_c.dir/rosidl_generator_c/fw_msgs/msg/detail/state_est_quat__functions.c.o\x1b[0m\n'}
+[0.940148] (fw_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_generator_c.dir/rosidl_generator_c/fw_msgs/msg/detail/state_est_euler__functions.c.o\x1b[0m\n'}
+[0.963791] (fw_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libfw_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[0.981413] (fw_msgs) StdoutLine: {'line': b'[ 18%] Built target fw_msgs__rosidl_generator_c\n'}
+[0.986529] (fw_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[0.986648] (fw_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.994159] (vicon_receiver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.000656] (-) TimerEvent: {}
+[1.010292] (vicon_receiver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.012002] (vicon_receiver) StdoutLine: {'line': b'-- Build files have been written to: /FW_Control/src/build/vicon_receiver\n'}
+[1.017138] (vicon_receiver) CommandEnded: {'returncode': 0}
+[1.017538] (vicon_receiver) JobProgress: {'identifier': 'vicon_receiver', 'progress': 'build'}
+[1.017730] (vicon_receiver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/FW_Control/src/build/vicon_receiver', '--', '-j24', '-l24'], 'cwd': '/FW_Control/src/build/vicon_receiver', 'env': OrderedDict([('HOSTNAME', 'orl1-US-Desktop-Aegis-RS'), ('GIT_ASKPASS', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/FW_Control'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/FW_Control/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-823d8eb82e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/FW_Control/src/build/vicon_receiver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy')]), 'shell': False}
+[1.040089] (vicon_receiver) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.040297] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__cpp\x1b[0m\n'}
+[1.045384] (vicon_receiver) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.052912] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.061101] (fw_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fw_msgs/msg/ctrl_input__type_support.cpp.o\x1b[0m\n'}
+[1.062068] (fw_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fw_msgs/msg/state_est_quat__type_support.cpp.o\x1b[0m\n'}
+[1.062342] (fw_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fw_msgs/msg/position_euler__type_support.cpp.o\x1b[0m\n'}
+[1.062545] (fw_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fw_msgs/msg/state_est_euler__type_support.cpp.o\x1b[0m\n'}
+[1.066976] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.076128] (fw_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fw_msgs/msg/detail/ctrl_input__type_support.cpp.o\x1b[0m\n'}
+[1.077893] (fw_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fw_msgs/msg/detail/state_est_euler__type_support.cpp.o\x1b[0m\n'}
+[1.078063] (fw_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fw_msgs/msg/detail/position_euler__type_support.cpp.o\x1b[0m\n'}
+[1.078119] (fw_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fw_msgs/msg/detail/state_est_quat__type_support.cpp.o\x1b[0m\n'}
+[1.086878] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.100526] (fw_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fw_msgs/msg/detail/dds_fastrtps/ctrl_input__type_support.cpp.o\x1b[0m\n'}
+[1.100679] (-) TimerEvent: {}
+[1.100793] (fw_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fw_msgs/msg/detail/dds_fastrtps/state_est_euler__type_support.cpp.o\x1b[0m\n'}
+[1.100852] (fw_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fw_msgs/msg/detail/dds_fastrtps/position_euler__type_support.cpp.o\x1b[0m\n'}
+[1.100891] (fw_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fw_msgs/msg/detail/dds_fastrtps/state_est_quat__type_support.cpp.o\x1b[0m\n'}
+[1.114162] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[1.133560] (fw_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fw_msgs/msg/ctrl_input__type_support.cpp.o\x1b[0m\n'}
+[1.134578] (fw_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fw_msgs/msg/state_est_euler__type_support.cpp.o\x1b[0m\n'}
+[1.140583] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.147957] (fw_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fw_msgs/msg/state_est_quat__type_support.cpp.o\x1b[0m\n'}
+[1.151734] (fw_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fw_msgs/msg/detail/state_est_euler__type_support.c.o\x1b[0m\n'}
+[1.151922] (fw_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fw_msgs/msg/detail/state_est_quat__type_support.c.o\x1b[0m\n'}
+[1.152129] (fw_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/fw_msgs/msg/position_euler__type_support.cpp.o\x1b[0m\n'}
+[1.152235] (fw_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fw_msgs/msg/detail/ctrl_input__type_support.c.o\x1b[0m\n'}
+[1.159005] (fw_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fw_msgs/msg/detail/position_euler__type_support.c.o\x1b[0m\n'}
+[1.172612] (vicon_receiver) StdoutLine: {'line': b'[  5%] Built target vicon_receiver__cpp\n'}
+[1.173874] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_generator_c\x1b[0m\n'}
+[1.176601] (fw_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libfw_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.179222] (vicon_receiver) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.179376] (vicon_receiver) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.180124] (vicon_receiver) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.181886] (vicon_receiver) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position__functions.c.o\x1b[0m\n'}
+[1.184370] (fw_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libfw_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.200822] (-) TimerEvent: {}
+[1.201977] (fw_msgs) StdoutLine: {'line': b'[ 61%] Built target fw_msgs__rosidl_typesupport_c\n'}
+[1.206339] (fw_msgs) StdoutLine: {'line': b'[ 61%] Built target fw_msgs__rosidl_typesupport_introspection_c\n'}
+[1.218871] (vicon_receiver) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libvicon_receiver__rosidl_generator_c.so\x1b[0m\n'}
+[1.238282] (vicon_receiver) StdoutLine: {'line': b'[ 20%] Built target vicon_receiver__rosidl_generator_c\n'}
+[1.243797] (vicon_receiver) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.243955] (vicon_receiver) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.272081] (fw_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libfw_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.288799] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.293329] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.293727] (fw_msgs) StdoutLine: {'line': b'[ 63%] Built target fw_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.295141] (fw_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libfw_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.296881] (vicon_receiver) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vicon_receiver/msg/detail/position__type_support.cpp.o\x1b[0m\n'}
+[1.299902] (vicon_receiver) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vicon_receiver/msg/detail/dds_fastrtps/position__type_support.cpp.o\x1b[0m\n'}
+[1.300919] (-) TimerEvent: {}
+[1.316507] (fw_msgs) StdoutLine: {'line': b'[ 65%] Built target fw_msgs__rosidl_typesupport_cpp\n'}
+[1.338041] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.338214] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_c\x1b[0m\n'}
+[1.342309] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.344144] (vicon_receiver) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_c.dir/rosidl_typesupport_c/vicon_receiver/msg/position__type_support.cpp.o\x1b[0m\n'}
+[1.345678] (vicon_receiver) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vicon_receiver/msg/position__type_support.cpp.o\x1b[0m\n'}
+[1.348657] (vicon_receiver) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vicon_receiver/msg/detail/position__type_support.c.o\x1b[0m\n'}
+[1.359839] (vicon_receiver) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.365760] (vicon_receiver) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking C shared library libvicon_receiver__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.380545] (vicon_receiver) StdoutLine: {'line': b'[ 47%] Built target vicon_receiver__rosidl_typesupport_c\n'}
+[1.380709] (vicon_receiver) StdoutLine: {'line': b'[ 47%] Built target vicon_receiver__rosidl_typesupport_introspection_c\n'}
+[1.391785] (fw_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libfw_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.401097] (-) TimerEvent: {}
+[1.430537] (vicon_receiver) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.434768] (fw_msgs) StdoutLine: {'line': b'[ 67%] Built target fw_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.439988] (fw_msgs) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.461522] (vicon_receiver) StdoutLine: {'line': b'[ 50%] Built target vicon_receiver__rosidl_typesupport_introspection_cpp\n'}
+[1.462492] (vicon_receiver) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.481609] (vicon_receiver) StdoutLine: {'line': b'[ 52%] Built target vicon_receiver__rosidl_typesupport_cpp\n'}
+[1.494261] (vicon_receiver) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.501200] (-) TimerEvent: {}
+[1.535159] (vicon_receiver) StdoutLine: {'line': b'[ 55%] Built target vicon_receiver__rosidl_typesupport_fastrtps_cpp\n'}
+[1.540250] (vicon_receiver) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.587552] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.595178] (fw_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fw_msgs/msg/detail/ctrl_input__type_support_c.cpp.o\x1b[0m\n'}
+[1.595293] (fw_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fw_msgs/msg/detail/position_euler__type_support_c.cpp.o\x1b[0m\n'}
+[1.595414] (fw_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fw_msgs/msg/detail/state_est_euler__type_support_c.cpp.o\x1b[0m\n'}
+[1.595570] (fw_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fw_msgs/msg/detail/state_est_quat__type_support_c.cpp.o\x1b[0m\n'}
+[1.601334] (-) TimerEvent: {}
+[1.638894] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.646075] (vicon_receiver) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vicon_receiver/msg/detail/position__type_support_c.cpp.o\x1b[0m\n'}
+[1.701437] (-) TimerEvent: {}
+[1.746253] (fw_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libfw_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.788804] (fw_msgs) StdoutLine: {'line': b'[ 78%] Built target fw_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.793889] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs\x1b[0m\n'}
+[1.798826] (fw_msgs) StdoutLine: {'line': b'[ 78%] Built target fw_msgs\n'}
+[1.801494] (-) TimerEvent: {}
+[1.803771] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__py\x1b[0m\n'}
+[1.809216] (fw_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[1.814196] (vicon_receiver) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.855221] (vicon_receiver) StdoutLine: {'line': b'[ 64%] Built target vicon_receiver__rosidl_typesupport_fastrtps_c\n'}
+[1.859928] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver\x1b[0m\n'}
+[1.864527] (vicon_receiver) StdoutLine: {'line': b'[ 64%] Built target vicon_receiver\n'}
+[1.869091] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__py\x1b[0m\n'}
+[1.869357] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_client\x1b[0m\n'}
+[1.873806] (vicon_receiver) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[1.890919] (vicon_receiver) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/vicon_client.dir/src/vicon_receiver/publisher.cpp.o\x1b[0m\n'}
+[1.891141] (vicon_receiver) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/vicon_client.dir/src/vicon_receiver/communicator.cpp.o\x1b[0m\n'}
+[1.901646] (-) TimerEvent: {}
+[2.001934] (-) TimerEvent: {}
+[2.048663] (vicon_receiver) StdoutLine: {'line': b'[ 73%] Built target vicon_receiver__py\n'}
+[2.053755] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__python\x1b[0m\n'}
+[2.063286] (vicon_receiver) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/vicon_receiver__python.dir/rosidl_generator_py/vicon_receiver/msg/_position_s.c.o\x1b[0m\n'}
+[2.102029] (-) TimerEvent: {}
+[2.108997] (fw_msgs) StdoutLine: {'line': b'[ 80%] Built target fw_msgs__py\n'}
+[2.109487] (vicon_receiver) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vicon_receiver/libvicon_receiver__python.so\x1b[0m\n'}
+[2.113736] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__python\x1b[0m\n'}
+[2.126494] (fw_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__python.dir/rosidl_generator_py/fw_msgs/msg/_ctrl_input_s.c.o\x1b[0m\n'}
+[2.126686] (fw_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__python.dir/rosidl_generator_py/fw_msgs/msg/_position_euler_s.c.o\x1b[0m\n'}
+[2.127214] (fw_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__python.dir/rosidl_generator_py/fw_msgs/msg/_state_est_euler_s.c.o\x1b[0m\n'}
+[2.127378] (fw_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__python.dir/rosidl_generator_py/fw_msgs/msg/_state_est_quat_s.c.o\x1b[0m\n'}
+[2.128955] (vicon_receiver) StdoutLine: {'line': b'[ 79%] Built target vicon_receiver__python\n'}
+[2.137272] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.137377] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.137433] (vicon_receiver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target vicon_receiver__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.154108] (vicon_receiver) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.154258] (vicon_receiver) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.154303] (vicon_receiver) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.178336] (fw_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fw_msgs/libfw_msgs__python.so\x1b[0m\n'}
+[2.192717] (vicon_receiver) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.198536] (vicon_receiver) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.198723] (fw_msgs) StdoutLine: {'line': b'[ 89%] Built target fw_msgs__python\n'}
+[2.202194] (-) TimerEvent: {}
+[2.203621] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.206497] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.206640] (fw_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target fw_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.207751] (vicon_receiver) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.209811] (vicon_receiver) StdoutLine: {'line': b'[ 97%] Built target vicon_receiver__rosidl_typesupport_introspection_c__pyext\n'}
+[2.212434] (fw_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fw_msgs/_fw_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.221926] (fw_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fw_msgs/_fw_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.222127] (fw_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/fw_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fw_msgs/_fw_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.224841] (vicon_receiver) StdoutLine: {'line': b'[ 97%] Built target vicon_receiver__rosidl_typesupport_c__pyext\n'}
+[2.233947] (vicon_receiver) StdoutLine: {'line': b'[ 97%] Built target vicon_receiver__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.254992] (fw_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fw_msgs/fw_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.272118] (fw_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fw_msgs/fw_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.272275] (fw_msgs) StdoutLine: {'line': b'[ 98%] Built target fw_msgs__rosidl_typesupport_c__pyext\n'}
+[2.273976] (fw_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/fw_msgs/fw_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.288622] (fw_msgs) StdoutLine: {'line': b'[100%] Built target fw_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.302275] (-) TimerEvent: {}
+[2.303338] (fw_msgs) StdoutLine: {'line': b'[100%] Built target fw_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.309756] (fw_msgs) CommandEnded: {'returncode': 0}
+[2.349078] (fw_msgs) JobProgress: {'identifier': 'fw_msgs', 'progress': 'install'}
+[2.355057] (fw_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/FW_Control/src/build/fw_msgs'], 'cwd': '/FW_Control/src/build/fw_msgs', 'env': OrderedDict([('HOSTNAME', 'orl1-US-Desktop-Aegis-RS'), ('GIT_ASKPASS', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/FW_Control'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/FW_Control/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-823d8eb82e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/FW_Control/src/build/fw_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy')]), 'shell': False}
+[2.360464] (fw_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.360628] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/ament_index/resource_index/rosidl_interfaces/fw_msgs\n'}
+[2.360696] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs\n'}
+[2.360725] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg\n'}
+[2.360749] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail\n'}
+[2.360800] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__struct.h\n'}
+[2.360835] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__functions.c\n'}
+[2.360871] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__functions.h\n'}
+[2.360895] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__functions.h\n'}
+[2.360936] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__type_support.h\n'}
+[2.360967] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__struct.h\n'}
+[2.360988] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__type_support.h\n'}
+[2.361010] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__type_support.h\n'}
+[2.361032] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__functions.h\n'}
+[2.361068] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__functions.c\n'}
+[2.361117] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__functions.h\n'}
+[2.361140] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__type_support.h\n'}
+[2.361294] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__struct.h\n'}
+[2.361319] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__functions.c\n'}
+[2.361341] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__functions.c\n'}
+[2.361381] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__struct.h\n'}
+[2.361404] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.361427] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/state_est_euler.h\n'}
+[2.361477] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/position_euler.h\n'}
+[2.361502] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/state_est_quat.h\n'}
+[2.361525] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/ctrl_input.h\n'}
+[2.361568] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/library_path.sh\n'}
+[2.361591] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/library_path.dsv\n'}
+[2.361914] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_generator_c.so\n'}
+[2.362067] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_generator_c.so" to ""\n'}
+[2.362104] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs\n'}
+[2.362151] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg\n'}
+[2.362175] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail\n'}
+[2.362197] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__rosidl_typesupport_fastrtps_c.h\n'}
+[2.362240] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__rosidl_typesupport_fastrtps_c.h\n'}
+[2.362264] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__rosidl_typesupport_fastrtps_c.h\n'}
+[2.362301] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__rosidl_typesupport_fastrtps_c.h\n'}
+[2.362339] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.362380] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.362523] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.362566] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs\n'}
+[2.362590] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg\n'}
+[2.362635] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail\n'}
+[2.362657] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.362680] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.362722] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/dds_fastrtps\n'}
+[2.362745] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.362787] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.362809] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.362849] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.362997] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.363041] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs\n'}
+[2.363067] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg\n'}
+[2.363104] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail\n'}
+[2.363145] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__rosidl_typesupport_introspection_c.h\n'}
+[2.363171] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__rosidl_typesupport_introspection_c.h\n'}
+[2.363218] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__type_support.c\n'}
+[2.363243] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__rosidl_typesupport_introspection_c.h\n'}
+[2.363284] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__type_support.c\n'}
+[2.363307] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__type_support.c\n'}
+[2.363345] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__rosidl_typesupport_introspection_c.h\n'}
+[2.363390] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__type_support.c\n'}
+[2.363413] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.363458] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.363594] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.363638] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_c.so\n'}
+[2.363753] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_c.so" to ""\n'}
+[2.363787] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs\n'}
+[2.363836] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg\n'}
+[2.363860] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail\n'}
+[2.363884] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__struct.hpp\n'}
+[2.363924] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__builder.hpp\n'}
+[2.363971] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__builder.hpp\n'}
+[2.363996] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__traits.hpp\n'}
+[2.364040] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__struct.hpp\n'}
+[2.364066] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__struct.hpp\n'}
+[2.364109] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__struct.hpp\n'}
+[2.364134] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__traits.hpp\n'}
+[2.364177] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__builder.hpp\n'}
+[2.364202] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__traits.hpp\n'}
+[2.364241] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__traits.hpp\n'}
+[2.364279] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__builder.hpp\n'}
+[2.364323] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/state_est_quat.hpp\n'}
+[2.364346] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/ctrl_input.hpp\n'}
+[2.364389] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/state_est_euler.hpp\n'}
+[2.364411] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/position_euler.hpp\n'}
+[2.364461] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs\n'}
+[2.364487] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg\n'}
+[2.364511] (fw_msgs) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail\n'}
+[2.364548] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.364594] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_euler__type_support.cpp\n'}
+[2.364629] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.364653] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/ctrl_input__type_support.cpp\n'}
+[2.364689] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.364733] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.364758] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/position_euler__type_support.cpp\n'}
+[2.364792] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/include/fw_msgs/msg/detail/state_est_quat__type_support.cpp\n'}
+[2.364843] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.364990] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.365035] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_cpp.so\n'}
+[2.365181] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[2.365311] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/pythonpath.sh\n'}
+[2.365384] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/pythonpath.dsv\n'}
+[2.365447] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/__init__.py\n'}
+[2.381349] (fw_msgs) StdoutLine: {'line': b"Compiling '/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/__init__.py'...\n"}
+[2.383400] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg\n'}
+[2.383484] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_state_est_quat.py\n'}
+[2.383575] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/__init__.py\n'}
+[2.383648] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_ctrl_input.py\n'}
+[2.383708] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_ctrl_input_s.c\n'}
+[2.383766] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_position_euler_s.c\n'}
+[2.383815] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_state_est_euler_s.c\n'}
+[2.383874] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_state_est_quat_s.c\n'}
+[2.383923] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_position_euler.py\n'}
+[2.383971] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/msg/_state_est_euler.py\n'}
+[2.384020] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/fw_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[2.384079] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/fw_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[2.384147] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/fw_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[2.384341] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/fw_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[2.384428] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/fw_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[2.384599] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages/fw_msgs/fw_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[2.384659] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/lib/libfw_msgs__python.so\n'}
+[2.384778] (fw_msgs) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/fw_msgs/lib/libfw_msgs__python.so" to ""\n'}
+[2.384836] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/CtrlInput.idl\n'}
+[2.384894] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/PositionEuler.idl\n'}
+[2.384951] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/StateEstEuler.idl\n'}
+[2.385008] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/StateEstQuat.idl\n'}
+[2.385070] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/CtrlInput.msg\n'}
+[2.385128] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/PositionEuler.msg\n'}
+[2.385210] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/StateEstEuler.msg\n'}
+[2.385279] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/msg/StateEstQuat.msg\n'}
+[2.385339] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/ament_index/resource_index/package_run_dependencies/fw_msgs\n'}
+[2.385393] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/ament_index/resource_index/parent_prefix_path/fw_msgs\n'}
+[2.385506] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/ament_prefix_path.sh\n'}
+[2.385593] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/ament_prefix_path.dsv\n'}
+[2.385642] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/path.sh\n'}
+[2.385709] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/environment/path.dsv\n'}
+[2.385779] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/local_setup.bash\n'}
+[2.385839] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/local_setup.sh\n'}
+[2.385887] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/local_setup.zsh\n'}
+[2.385944] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/local_setup.dsv\n'}
+[2.386003] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/package.dsv\n'}
+[2.386060] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/ament_index/resource_index/packages/fw_msgs\n'}
+[2.386118] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_generator_cExport.cmake\n'}
+[2.386176] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.386234] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.386292] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.386353] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.386412] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.386460] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.386527] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.386586] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.386645] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.386702] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.386761] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.386828] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.386885] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.386950] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.387010] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.387059] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.387107] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.387156] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgsConfig.cmake\n'}
+[2.387204] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/cmake/fw_msgsConfig-version.cmake\n'}
+[2.387252] (fw_msgs) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/fw_msgs/share/fw_msgs/package.xml\n'}
+[2.388550] (fw_msgs) CommandEnded: {'returncode': 0}
+[2.402375] (-) TimerEvent: {}
+[2.443371] (fw_msgs) JobEnded: {'identifier': 'fw_msgs', 'rc': 0}
+[2.443891] (serial2arduino) JobStarted: {'identifier': 'serial2arduino'}
+[2.502550] (-) TimerEvent: {}
+[2.602959] (-) TimerEvent: {}
+[2.703334] (-) TimerEvent: {}
+[2.719045] (serial2arduino) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/serial2arduino', 'build', '--build-base', '/FW_Control/src/build/serial2arduino/build', 'install', '--record', '/FW_Control/src/build/serial2arduino/install.log', '--install-scripts', '$base/lib/serial2arduino', '--single-version-externally-managed'], 'cwd': '/FW_Control/src/serial2arduino', 'env': {'HOSTNAME': 'orl1-US-Desktop-Aegis-RS', 'GIT_ASKPASS': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/FW_Control/src/install/fw_msgs/lib:/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/FW_Control', 'TERM_PROGRAM_VERSION': '1.79.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/FW_Control/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':2', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-823d8eb82e.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/FW_Control/src/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy', 'DEBIAN_FRONTEND': 'noninteractive', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X4', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/FW_Control/src/build/serial2arduino', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/FW_Control/src/build/serial2arduino/prefix_override:/FW_Control/src/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/FW_Control/src/install/fw_msgs:/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs'}, 'shell': False}
+[2.803493] (-) TimerEvent: {}
+[2.806401] (serial2arduino) StdoutLine: {'line': b'running egg_info\n'}
+[2.806662] (serial2arduino) StdoutLine: {'line': b'creating ../build/serial2arduino/serial2arduino.egg-info\n'}
+[2.806737] (serial2arduino) StdoutLine: {'line': b'writing ../build/serial2arduino/serial2arduino.egg-info/PKG-INFO\n'}
+[2.806821] (serial2arduino) StdoutLine: {'line': b'writing dependency_links to ../build/serial2arduino/serial2arduino.egg-info/dependency_links.txt\n'}
+[2.806873] (serial2arduino) StdoutLine: {'line': b'writing entry points to ../build/serial2arduino/serial2arduino.egg-info/entry_points.txt\n'}
+[2.806924] (serial2arduino) StdoutLine: {'line': b'writing requirements to ../build/serial2arduino/serial2arduino.egg-info/requires.txt\n'}
+[2.806990] (serial2arduino) StdoutLine: {'line': b'writing top-level names to ../build/serial2arduino/serial2arduino.egg-info/top_level.txt\n'}
+[2.807415] (serial2arduino) StdoutLine: {'line': b"writing manifest file '../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt'\n"}
+[2.822293] (serial2arduino) StdoutLine: {'line': b"reading manifest file '../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt'\n"}
+[2.822606] (serial2arduino) StdoutLine: {'line': b"writing manifest file '../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt'\n"}
+[2.822811] (serial2arduino) StdoutLine: {'line': b'running build\n'}
+[2.822856] (serial2arduino) StdoutLine: {'line': b'running build_py\n'}
+[2.822887] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/build/serial2arduino/build\n'}
+[2.822916] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/build/serial2arduino/build/lib\n'}
+[2.822943] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/build/serial2arduino/build/lib/serial2arduino\n'}
+[2.822970] (serial2arduino) StdoutLine: {'line': b'copying serial2arduino/__init__.py -> /FW_Control/src/build/serial2arduino/build/lib/serial2arduino\n'}
+[2.822998] (serial2arduino) StdoutLine: {'line': b'copying serial2arduino/testcontroller.py -> /FW_Control/src/build/serial2arduino/build/lib/serial2arduino\n'}
+[2.823025] (serial2arduino) StdoutLine: {'line': b'copying serial2arduino/sendcommands.py -> /FW_Control/src/build/serial2arduino/build/lib/serial2arduino\n'}
+[2.823067] (serial2arduino) StdoutLine: {'line': b'running install\n'}
+[2.823278] (serial2arduino) StdoutLine: {'line': b'running install_lib\n'}
+[2.823680] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino\n'}
+[2.823715] (serial2arduino) StdoutLine: {'line': b'copying /FW_Control/src/build/serial2arduino/build/lib/serial2arduino/__init__.py -> /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino\n'}
+[2.823751] (serial2arduino) StdoutLine: {'line': b'copying /FW_Control/src/build/serial2arduino/build/lib/serial2arduino/testcontroller.py -> /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino\n'}
+[2.823784] (serial2arduino) StdoutLine: {'line': b'copying /FW_Control/src/build/serial2arduino/build/lib/serial2arduino/sendcommands.py -> /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino\n'}
+[2.824017] (serial2arduino) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino/__init__.py to __init__.cpython-38.pyc\n'}
+[2.824569] (serial2arduino) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino/testcontroller.py to testcontroller.cpython-38.pyc\n'}
+[2.824813] (serial2arduino) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino/sendcommands.py to sendcommands.cpython-38.pyc\n'}
+[2.824988] (serial2arduino) StdoutLine: {'line': b'running install_data\n'}
+[2.825128] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/install/serial2arduino/share/ament_index\n'}
+[2.825185] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/install/serial2arduino/share/ament_index/resource_index\n'}
+[2.825214] (serial2arduino) StdoutLine: {'line': b'creating /FW_Control/src/install/serial2arduino/share/ament_index/resource_index/packages\n'}
+[2.825243] (serial2arduino) StdoutLine: {'line': b'copying resource/serial2arduino -> /FW_Control/src/install/serial2arduino/share/ament_index/resource_index/packages\n'}
+[2.825280] (serial2arduino) StdoutLine: {'line': b'copying package.xml -> /FW_Control/src/install/serial2arduino/share/serial2arduino\n'}
+[2.825302] (serial2arduino) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.825985] (serial2arduino) StdoutLine: {'line': b'Copying ../build/serial2arduino/serial2arduino.egg-info to /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino-0.0.0-py3.8.egg-info\n'}
+[2.826275] (serial2arduino) StdoutLine: {'line': b'running install_scripts\n'}
+[2.834471] (serial2arduino) StdoutLine: {'line': b'Installing sendcommands script to /FW_Control/src/install/serial2arduino/lib/serial2arduino\n'}
+[2.834641] (serial2arduino) StdoutLine: {'line': b'Installing testcontroller script to /FW_Control/src/install/serial2arduino/lib/serial2arduino\n'}
+[2.834714] (serial2arduino) StdoutLine: {'line': b"writing list of installed files to '/FW_Control/src/build/serial2arduino/install.log'\n"}
+[2.845481] (serial2arduino) CommandEnded: {'returncode': 0}
+[2.848974] (serial2arduino) JobEnded: {'identifier': 'serial2arduino', 'rc': 0}
+[2.903589] (-) TimerEvent: {}
+[3.003821] (-) TimerEvent: {}
+[3.104077] (-) TimerEvent: {}
+[3.204342] (-) TimerEvent: {}
+[3.304617] (-) TimerEvent: {}
+[3.404919] (-) TimerEvent: {}
+[3.505261] (-) TimerEvent: {}
+[3.605492] (-) TimerEvent: {}
+[3.705715] (-) TimerEvent: {}
+[3.795746] (vicon_receiver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vicon_client\x1b[0m\n'}
+[3.805780] (-) TimerEvent: {}
+[3.902618] (vicon_receiver) StdoutLine: {'line': b'[100%] Built target vicon_client\n'}
+[3.905881] (-) TimerEvent: {}
+[3.909375] (vicon_receiver) CommandEnded: {'returncode': 0}
+[3.931596] (vicon_receiver) JobProgress: {'identifier': 'vicon_receiver', 'progress': 'install'}
+[3.931773] (vicon_receiver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/FW_Control/src/build/vicon_receiver'], 'cwd': '/FW_Control/src/build/vicon_receiver', 'env': OrderedDict([('HOSTNAME', 'orl1-US-Desktop-Aegis-RS'), ('GIT_ASKPASS', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/FW_Control'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/FW_Control/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-823d8eb82e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/FW_Control/src/build/vicon_receiver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs:/FW_Control/install/control:/FW_Control/install/serial2arduino:/FW_Control/install/estimatestate:/opt/ros/foxy')]), 'shell': False}
+[3.936954] (vicon_receiver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.937041] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/rosidl_interfaces/vicon_receiver\n'}
+[3.937089] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver\n'}
+[3.937141] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg\n'}
+[3.937170] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail\n'}
+[3.937206] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__functions.c\n'}
+[3.937241] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__struct.h\n'}
+[3.937264] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__functions.h\n'}
+[3.937307] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__type_support.h\n'}
+[3.937341] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.937362] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/position.h\n'}
+[3.937414] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/library_path.sh\n'}
+[3.937469] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/library_path.dsv\n'}
+[3.937553] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_c.so\n'}
+[3.937925] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_c.so" to ""\n'}
+[3.937962] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver\n'}
+[3.938012] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg\n'}
+[3.938034] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail\n'}
+[3.938066] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[3.938088] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.938141] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_c.so\n'}
+[3.938374] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.938406] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver\n'}
+[3.938452] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg\n'}
+[3.938475] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail\n'}
+[3.938496] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.938533] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/dds_fastrtps\n'}
+[3.938575] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.938612] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.938839] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.938873] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver\n'}
+[3.938911] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg\n'}
+[3.938952] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail\n'}
+[3.938976] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__type_support.c\n'}
+[3.939020] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[3.939042] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.939078] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_c.so\n'}
+[3.939207] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.939253] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_c.so\n'}
+[3.939377] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_c.so" to ""\n'}
+[3.939419] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver\n'}
+[3.939463] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg\n'}
+[3.939485] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail\n'}
+[3.939507] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__traits.hpp\n'}
+[3.939550] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__builder.hpp\n'}
+[3.939574] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__struct.hpp\n'}
+[3.939616] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/position.hpp\n'}
+[3.939649] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver\n'}
+[3.939672] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg\n'}
+[3.939709] (vicon_receiver) StdoutLine: {'line': b'-- Up-to-date: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail\n'}
+[3.939748] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.939770] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/include/vicon_receiver/msg/detail/position__type_support.cpp\n'}
+[3.939807] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_cpp.so\n'}
+[3.939926] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.939972] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_cpp.so\n'}
+[3.940097] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_cpp.so" to ""\n'}
+[3.940127] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/pythonpath.sh\n'}
+[3.940178] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/pythonpath.dsv\n'}
+[3.940263] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/__init__.py\n'}
+[3.955864] (vicon_receiver) StdoutLine: {'line': b"Compiling '/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/__init__.py'...\n"}
+[3.957653] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg\n'}
+[3.957694] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg/_position.py\n'}
+[3.957749] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg/__init__.py\n'}
+[3.957790] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/msg/_position_s.c\n'}
+[3.957938] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.958154] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.958271] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.958486] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.958586] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.958778] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.958820] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__python.so\n'}
+[3.958952] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/libvicon_receiver__python.so" to ""\n'}
+[3.959001] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/msg/Position.idl\n'}
+[3.959050] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/msg/Position.msg\n'}
+[3.959122] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/lib/vicon_receiver/vicon_client\n'}
+[3.961016] (vicon_receiver) StdoutLine: {'line': b'-- Set runtime path of "/FW_Control/src/install/vicon_receiver/lib/vicon_receiver/vicon_client" to ""\n'}
+[3.961055] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver//launch\n'}
+[3.961088] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver//launch/client.launch.py\n'}
+[3.961143] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/package_run_dependencies/vicon_receiver\n'}
+[3.961216] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/parent_prefix_path/vicon_receiver\n'}
+[3.961271] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/ament_prefix_path.sh\n'}
+[3.961325] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/ament_prefix_path.dsv\n'}
+[3.961374] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/path.sh\n'}
+[3.961424] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/environment/path.dsv\n'}
+[3.961469] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.bash\n'}
+[3.961514] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.sh\n'}
+[3.961564] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.zsh\n'}
+[3.961608] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/local_setup.dsv\n'}
+[3.961651] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/package.dsv\n'}
+[3.961711] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/ament_index/resource_index/packages/vicon_receiver\n'}
+[3.961793] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_generator_cExport.cmake\n'}
+[3.961847] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.961926] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.961980] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.962050] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport.cmake\n'}
+[3.962099] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.962168] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_generator_cppExport.cmake\n'}
+[3.962245] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.962299] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.962369] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport.cmake\n'}
+[3.962420] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.962469] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake-extras.cmake\n'}
+[3.962516] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.962565] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.962614] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.962663] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.962711] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.962759] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.962806] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiverConfig.cmake\n'}
+[3.962843] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiverConfig-version.cmake\n'}
+[3.962889] (vicon_receiver) StdoutLine: {'line': b'-- Installing: /FW_Control/src/install/vicon_receiver/share/vicon_receiver/package.xml\n'}
+[3.963985] (vicon_receiver) CommandEnded: {'returncode': 0}
+[3.999622] (vicon_receiver) JobEnded: {'identifier': 'vicon_receiver', 'rc': 0}
+[3.999924] (control) JobStarted: {'identifier': 'control'}
+[4.006393] (-) TimerEvent: {}
+[4.106758] (-) TimerEvent: {}
+[4.207019] (-) TimerEvent: {}
+[4.265423] (control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/control', 'build', '--build-base', '/FW_Control/src/build/control/build', 'install', '--record', '/FW_Control/src/build/control/install.log', '--install-scripts', '$base/lib/control', '--single-version-externally-managed'], 'cwd': '/FW_Control/src/control', 'env': {'HOSTNAME': 'orl1-US-Desktop-Aegis-RS', 'GIT_ASKPASS': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/FW_Control/src/install/vicon_receiver/lib:/FW_Control/install/vicon_receiver/lib:/FW_Control/install/fw_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/FW_Control', 'TERM_PROGRAM_VERSION': '1.79.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-7a2e8018-a774-44f7-b43d-20889f200425.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/FW_Control/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-52fb9882-9661-4e81-b42a-8712bdcd9552.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/root/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':2', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-823d8eb82e.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-52fb9882-9661-4e81-b42a-8712bdcd9552.sock', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/FW_Control/src/install/vicon_receiver:/FW_Control/install/control:/FW_Control/install/vicon_receiver:/FW_Control/install/serial2arduino:/FW_Control/install/fw_msgs:/FW_Control/install/estimatestate:/opt/ros/foxy', 'DEBIAN_FRONTEND': 'noninteractive', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X4', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/FW_Control/src/build/control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/FW_Control/src/build/control/prefix_override:/FW_Control/src/install/control/lib/python3.8/site-packages:/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/control/lib/python3.8/site-packages:/FW_Control/install/vicon_receiver/lib/python3.8/site-packages:/FW_Control/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/install/fw_msgs/lib/python3.8/site-packages:/FW_Control/install/estimatestate/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/FW_Control/src/install/vicon_receiver:/FW_Control/install/vicon_receiver:/FW_Control/install/fw_msgs'}, 'shell': False}
+[4.307075] (-) TimerEvent: {}
+[4.351466] (control) StdoutLine: {'line': b'running egg_info\n'}
+[4.351783] (control) StdoutLine: {'line': b'creating ../build/control/control.egg-info\n'}
+[4.351852] (control) StdoutLine: {'line': b'writing ../build/control/control.egg-info/PKG-INFO\n'}
+[4.352121] (control) StdoutLine: {'line': b'writing dependency_links to ../build/control/control.egg-info/dependency_links.txt\n'}
+[4.352185] (control) StdoutLine: {'line': b'writing entry points to ../build/control/control.egg-info/entry_points.txt\n'}
+[4.352317] (control) StdoutLine: {'line': b'writing requirements to ../build/control/control.egg-info/requires.txt\n'}
+[4.352374] (control) StdoutLine: {'line': b'writing top-level names to ../build/control/control.egg-info/top_level.txt\n'}
+[4.352848] (control) StdoutLine: {'line': b"writing manifest file '../build/control/control.egg-info/SOURCES.txt'\n"}
+[4.367478] (control) StdoutLine: {'line': b"reading manifest file '../build/control/control.egg-info/SOURCES.txt'\n"}
+[4.367763] (control) StdoutLine: {'line': b"writing manifest file '../build/control/control.egg-info/SOURCES.txt'\n"}
+[4.367824] (control) StdoutLine: {'line': b'running build\n'}
+[4.367852] (control) StdoutLine: {'line': b'running build_py\n'}
+[4.367877] (control) StdoutLine: {'line': b'creating /FW_Control/src/build/control/build\n'}
+[4.368024] (control) StdoutLine: {'line': b'creating /FW_Control/src/build/control/build/lib\n'}
+[4.368081] (control) StdoutLine: {'line': b'creating /FW_Control/src/build/control/build/lib/control\n'}
+[4.368109] (control) StdoutLine: {'line': b'copying control/checkpos.py -> /FW_Control/src/build/control/build/lib/control\n'}
+[4.368133] (control) StdoutLine: {'line': b'copying control/__init__.py -> /FW_Control/src/build/control/build/lib/control\n'}
+[4.368154] (control) StdoutLine: {'line': b'running install\n'}
+[4.368381] (control) StdoutLine: {'line': b'running install_lib\n'}
+[4.368767] (control) StdoutLine: {'line': b'creating /FW_Control/src/install/control/lib/python3.8/site-packages/control\n'}
+[4.368827] (control) StdoutLine: {'line': b'copying /FW_Control/src/build/control/build/lib/control/checkpos.py -> /FW_Control/src/install/control/lib/python3.8/site-packages/control\n'}
+[4.368879] (control) StdoutLine: {'line': b'copying /FW_Control/src/build/control/build/lib/control/__init__.py -> /FW_Control/src/install/control/lib/python3.8/site-packages/control\n'}
+[4.368992] (control) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/control/lib/python3.8/site-packages/control/checkpos.py to checkpos.cpython-38.pyc\n'}
+[4.369566] (control) StdoutLine: {'line': b'byte-compiling /FW_Control/src/install/control/lib/python3.8/site-packages/control/__init__.py to __init__.cpython-38.pyc\n'}
+[4.369621] (control) StdoutLine: {'line': b'running install_data\n'}
+[4.369785] (control) StdoutLine: {'line': b'creating /FW_Control/src/install/control/share/ament_index\n'}
+[4.369836] (control) StdoutLine: {'line': b'creating /FW_Control/src/install/control/share/ament_index/resource_index\n'}
+[4.369859] (control) StdoutLine: {'line': b'creating /FW_Control/src/install/control/share/ament_index/resource_index/packages\n'}
+[4.369883] (control) StdoutLine: {'line': b'copying resource/control -> /FW_Control/src/install/control/share/ament_index/resource_index/packages\n'}
+[4.369927] (control) StdoutLine: {'line': b'copying package.xml -> /FW_Control/src/install/control/share/control\n'}
+[4.369951] (control) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.370585] (control) StdoutLine: {'line': b'Copying ../build/control/control.egg-info to /FW_Control/src/install/control/lib/python3.8/site-packages/control-0.0.0-py3.8.egg-info\n'}
+[4.370868] (control) StdoutLine: {'line': b'running install_scripts\n'}
+[4.378649] (control) StdoutLine: {'line': b"writing list of installed files to '/FW_Control/src/build/control/install.log'\n"}
+[4.388452] (control) CommandEnded: {'returncode': 0}
+[4.392308] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[4.392706] (-) EventReactorShutdown: {}

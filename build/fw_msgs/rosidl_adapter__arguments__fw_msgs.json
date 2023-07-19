@@ -1,0 +1,9 @@
+{
+  "package_name": "fw_msgs",
+  "non_idl_tuples": [
+    "/FW_Control/src/fw_msgs:msg/CtrlInput.msg",
+    "/FW_Control/src/fw_msgs:msg/PositionEuler.msg",
+    "/FW_Control/src/fw_msgs:msg/StateEstEuler.msg",
+    "/FW_Control/src/fw_msgs:msg/StateEstQuat.msg"
+  ]
+}

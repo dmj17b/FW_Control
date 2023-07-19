@@ -1,0 +1,41 @@
+[0.276s] Invoking command in '/FW_Control/src/serial2arduino': AMENT_PREFIX_PATH=/FW_Control/src/install/fw_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/FW_Control/src/install/fw_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/FW_Control/src/install/fw_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/FW_Control/src/build/serial2arduino/prefix_override:/FW_Control/src/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/serial2arduino build --build-base /FW_Control/src/build/serial2arduino/build install --record /FW_Control/src/build/serial2arduino/install.log --install-scripts $base/lib/serial2arduino --single-version-externally-managed
+[0.363s] running egg_info
+[0.363s] creating ../build/serial2arduino/serial2arduino.egg-info
+[0.363s] writing ../build/serial2arduino/serial2arduino.egg-info/PKG-INFO
+[0.363s] writing dependency_links to ../build/serial2arduino/serial2arduino.egg-info/dependency_links.txt
+[0.363s] writing entry points to ../build/serial2arduino/serial2arduino.egg-info/entry_points.txt
+[0.363s] writing requirements to ../build/serial2arduino/serial2arduino.egg-info/requires.txt
+[0.363s] writing top-level names to ../build/serial2arduino/serial2arduino.egg-info/top_level.txt
+[0.364s] writing manifest file '../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt'
+[0.378s] reading manifest file '../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt'
+[0.379s] writing manifest file '../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt'
+[0.379s] running build
+[0.379s] running build_py
+[0.379s] creating /FW_Control/src/build/serial2arduino/build
+[0.379s] creating /FW_Control/src/build/serial2arduino/build/lib
+[0.379s] creating /FW_Control/src/build/serial2arduino/build/lib/serial2arduino
+[0.379s] copying serial2arduino/__init__.py -> /FW_Control/src/build/serial2arduino/build/lib/serial2arduino
+[0.379s] copying serial2arduino/testcontroller.py -> /FW_Control/src/build/serial2arduino/build/lib/serial2arduino
+[0.379s] copying serial2arduino/sendcommands.py -> /FW_Control/src/build/serial2arduino/build/lib/serial2arduino
+[0.379s] running install
+[0.379s] running install_lib
+[0.380s] creating /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino
+[0.380s] copying /FW_Control/src/build/serial2arduino/build/lib/serial2arduino/__init__.py -> /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino
+[0.380s] copying /FW_Control/src/build/serial2arduino/build/lib/serial2arduino/testcontroller.py -> /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino
+[0.380s] copying /FW_Control/src/build/serial2arduino/build/lib/serial2arduino/sendcommands.py -> /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino
+[0.380s] byte-compiling /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino/__init__.py to __init__.cpython-38.pyc
+[0.381s] byte-compiling /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino/testcontroller.py to testcontroller.cpython-38.pyc
+[0.381s] byte-compiling /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino/sendcommands.py to sendcommands.cpython-38.pyc
+[0.381s] running install_data
+[0.381s] creating /FW_Control/src/install/serial2arduino/share/ament_index
+[0.381s] creating /FW_Control/src/install/serial2arduino/share/ament_index/resource_index
+[0.381s] creating /FW_Control/src/install/serial2arduino/share/ament_index/resource_index/packages
+[0.381s] copying resource/serial2arduino -> /FW_Control/src/install/serial2arduino/share/ament_index/resource_index/packages
+[0.381s] copying package.xml -> /FW_Control/src/install/serial2arduino/share/serial2arduino
+[0.381s] running install_egg_info
+[0.382s] Copying ../build/serial2arduino/serial2arduino.egg-info to /FW_Control/src/install/serial2arduino/lib/python3.8/site-packages/serial2arduino-0.0.0-py3.8.egg-info
+[0.382s] running install_scripts
+[0.391s] Installing sendcommands script to /FW_Control/src/install/serial2arduino/lib/serial2arduino
+[0.391s] Installing testcontroller script to /FW_Control/src/install/serial2arduino/lib/serial2arduino
+[0.391s] writing list of installed files to '/FW_Control/src/build/serial2arduino/install.log'
+[0.402s] Invoked command in '/FW_Control/src/serial2arduino' returned '0': AMENT_PREFIX_PATH=/FW_Control/src/install/fw_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/FW_Control/src/install/fw_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/FW_Control/src/install/fw_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/FW_Control/src/build/serial2arduino/prefix_override:/FW_Control/src/install/serial2arduino/lib/python3.8/site-packages:/FW_Control/src/install/fw_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/serial2arduino build --build-base /FW_Control/src/build/serial2arduino/build install --record /FW_Control/src/build/serial2arduino/install.log --install-scripts $base/lib/serial2arduino --single-version-externally-managed

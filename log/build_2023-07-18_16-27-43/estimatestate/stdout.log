@@ -1,0 +1,19 @@
+running egg_info
+writing ../build/estimatestate/estimatestate.egg-info/PKG-INFO
+writing dependency_links to ../build/estimatestate/estimatestate.egg-info/dependency_links.txt
+writing entry points to ../build/estimatestate/estimatestate.egg-info/entry_points.txt
+writing requirements to ../build/estimatestate/estimatestate.egg-info/requires.txt
+writing top-level names to ../build/estimatestate/estimatestate.egg-info/top_level.txt
+reading manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../build/estimatestate/estimatestate.egg-info to /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info
+running install_scripts
+Installing pubtransform script to /FW_Control/src/install/estimatestate/lib/estimatestate
+writing list of installed files to '/FW_Control/src/build/estimatestate/install.log'

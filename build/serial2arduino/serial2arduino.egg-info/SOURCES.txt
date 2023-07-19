@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../build/serial2arduino/serial2arduino.egg-info/PKG-INFO
+../build/serial2arduino/serial2arduino.egg-info/SOURCES.txt
+../build/serial2arduino/serial2arduino.egg-info/dependency_links.txt
+../build/serial2arduino/serial2arduino.egg-info/entry_points.txt
+../build/serial2arduino/serial2arduino.egg-info/requires.txt
+../build/serial2arduino/serial2arduino.egg-info/top_level.txt
+../build/serial2arduino/serial2arduino.egg-info/zip-safe
+resource/serial2arduino
+serial2arduino/__init__.py
+serial2arduino/sendcommands.py
+serial2arduino/testcontroller.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

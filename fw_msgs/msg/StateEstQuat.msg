@@ -1,0 +1,14 @@
+float32 x_trans
+float32 y_trans
+float32 z_trans
+float32 x_rot
+float32 y_rot
+float32 z_rot
+float32 w
+float32 dx_trans
+float32 dy_trans
+float32 dz_trans
+float32 dx_rot
+float32 dy_rot
+float32 dz_rot
+float32 dw

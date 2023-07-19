@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from fw_msgs/msg/StateEstEuler.msg
+// generated code does not contain a copyright notice
+
+
+module fw_msgs {
+  module msg {
+    struct StateEstEuler {
+      float x;
+
+      float y;
+
+      float z;
+
+      float r;
+
+      float p;
+
+      float ya;
+
+      float dx;
+
+      float dy;
+
+      float dz;
+
+      float dr;
+
+      float dp;
+
+      float dya;
+    };
+  };
+};

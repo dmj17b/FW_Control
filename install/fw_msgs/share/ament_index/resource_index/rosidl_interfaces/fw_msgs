@@ -1,0 +1,8 @@
+msg/CtrlInput.idl
+msg/CtrlInput.msg
+msg/PositionEuler.idl
+msg/PositionEuler.msg
+msg/StateEstEuler.idl
+msg/StateEstEuler.msg
+msg/StateEstQuat.idl
+msg/StateEstQuat.msg

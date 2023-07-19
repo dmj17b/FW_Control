@@ -1,0 +1,4 @@
+[console_scripts]
+sendcommands = serial2arduino.sendcommands:main
+testcontroller = serial2arduino.testcontroller:main
+

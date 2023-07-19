@@ -1,0 +1,36 @@
+[0.267s] Invoking command in '/FW_Control/src/control': AMENT_PREFIX_PATH=/FW_Control/src/install/vicon_receiver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/FW_Control/src/install/vicon_receiver:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/FW_Control/src/install/vicon_receiver/lib:${LD_LIBRARY_PATH} PYTHONPATH=/FW_Control/src/build/control/prefix_override:/FW_Control/src/install/control/lib/python3.8/site-packages:/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/control build --build-base /FW_Control/src/build/control/build install --record /FW_Control/src/build/control/install.log --install-scripts $base/lib/control --single-version-externally-managed
+[0.352s] running egg_info
+[0.352s] creating ../build/control/control.egg-info
+[0.352s] writing ../build/control/control.egg-info/PKG-INFO
+[0.352s] writing dependency_links to ../build/control/control.egg-info/dependency_links.txt
+[0.352s] writing entry points to ../build/control/control.egg-info/entry_points.txt
+[0.352s] writing requirements to ../build/control/control.egg-info/requires.txt
+[0.352s] writing top-level names to ../build/control/control.egg-info/top_level.txt
+[0.353s] writing manifest file '../build/control/control.egg-info/SOURCES.txt'
+[0.368s] reading manifest file '../build/control/control.egg-info/SOURCES.txt'
+[0.368s] writing manifest file '../build/control/control.egg-info/SOURCES.txt'
+[0.368s] running build
+[0.368s] running build_py
+[0.368s] creating /FW_Control/src/build/control/build
+[0.368s] creating /FW_Control/src/build/control/build/lib
+[0.368s] creating /FW_Control/src/build/control/build/lib/control
+[0.368s] copying control/checkpos.py -> /FW_Control/src/build/control/build/lib/control
+[0.368s] copying control/__init__.py -> /FW_Control/src/build/control/build/lib/control
+[0.368s] running install
+[0.368s] running install_lib
+[0.369s] creating /FW_Control/src/install/control/lib/python3.8/site-packages/control
+[0.369s] copying /FW_Control/src/build/control/build/lib/control/checkpos.py -> /FW_Control/src/install/control/lib/python3.8/site-packages/control
+[0.369s] copying /FW_Control/src/build/control/build/lib/control/__init__.py -> /FW_Control/src/install/control/lib/python3.8/site-packages/control
+[0.369s] byte-compiling /FW_Control/src/install/control/lib/python3.8/site-packages/control/checkpos.py to checkpos.cpython-38.pyc
+[0.370s] byte-compiling /FW_Control/src/install/control/lib/python3.8/site-packages/control/__init__.py to __init__.cpython-38.pyc
+[0.370s] running install_data
+[0.370s] creating /FW_Control/src/install/control/share/ament_index
+[0.370s] creating /FW_Control/src/install/control/share/ament_index/resource_index
+[0.370s] creating /FW_Control/src/install/control/share/ament_index/resource_index/packages
+[0.370s] copying resource/control -> /FW_Control/src/install/control/share/ament_index/resource_index/packages
+[0.370s] copying package.xml -> /FW_Control/src/install/control/share/control
+[0.370s] running install_egg_info
+[0.371s] Copying ../build/control/control.egg-info to /FW_Control/src/install/control/lib/python3.8/site-packages/control-0.0.0-py3.8.egg-info
+[0.371s] running install_scripts
+[0.379s] writing list of installed files to '/FW_Control/src/build/control/install.log'
+[0.389s] Invoked command in '/FW_Control/src/control' returned '0': AMENT_PREFIX_PATH=/FW_Control/src/install/vicon_receiver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/FW_Control/src/install/vicon_receiver:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/FW_Control/src/install/vicon_receiver/lib:${LD_LIBRARY_PATH} PYTHONPATH=/FW_Control/src/build/control/prefix_override:/FW_Control/src/install/control/lib/python3.8/site-packages:/FW_Control/src/install/vicon_receiver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/control build --build-base /FW_Control/src/build/control/build install --record /FW_Control/src/build/control/install.log --install-scripts $base/lib/control --single-version-externally-managed

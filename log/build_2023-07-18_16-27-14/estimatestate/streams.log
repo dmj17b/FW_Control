@@ -1,0 +1,37 @@
+[0.276s] Invoking command in '/FW_Control/src/estimatestate': PYTHONPATH=/FW_Control/src/build/estimatestate/prefix_override:/FW_Control/src/install/estimatestate/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/estimatestate build --build-base /FW_Control/src/build/estimatestate/build install --record /FW_Control/src/build/estimatestate/install.log --install-scripts $base/lib/estimatestate --single-version-externally-managed
+[0.362s] running egg_info
+[0.362s] creating ../build/estimatestate/estimatestate.egg-info
+[0.362s] writing ../build/estimatestate/estimatestate.egg-info/PKG-INFO
+[0.362s] writing dependency_links to ../build/estimatestate/estimatestate.egg-info/dependency_links.txt
+[0.362s] writing entry points to ../build/estimatestate/estimatestate.egg-info/entry_points.txt
+[0.362s] writing requirements to ../build/estimatestate/estimatestate.egg-info/requires.txt
+[0.362s] writing top-level names to ../build/estimatestate/estimatestate.egg-info/top_level.txt
+[0.363s] writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+[0.378s] reading manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+[0.378s] writing manifest file '../build/estimatestate/estimatestate.egg-info/SOURCES.txt'
+[0.378s] running build
+[0.378s] running build_py
+[0.378s] creating /FW_Control/src/build/estimatestate/build
+[0.379s] creating /FW_Control/src/build/estimatestate/build/lib
+[0.379s] creating /FW_Control/src/build/estimatestate/build/lib/estimatestate
+[0.379s] copying estimatestate/__init__.py -> /FW_Control/src/build/estimatestate/build/lib/estimatestate
+[0.379s] copying estimatestate/PublishTransform.py -> /FW_Control/src/build/estimatestate/build/lib/estimatestate
+[0.379s] running install
+[0.379s] running install_lib
+[0.379s] creating /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate
+[0.379s] copying /FW_Control/src/build/estimatestate/build/lib/estimatestate/__init__.py -> /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate
+[0.380s] copying /FW_Control/src/build/estimatestate/build/lib/estimatestate/PublishTransform.py -> /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate
+[0.380s] byte-compiling /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate/__init__.py to __init__.cpython-38.pyc
+[0.380s] byte-compiling /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate/PublishTransform.py to PublishTransform.cpython-38.pyc
+[0.381s] running install_data
+[0.381s] creating /FW_Control/src/install/estimatestate/share/ament_index
+[0.381s] creating /FW_Control/src/install/estimatestate/share/ament_index/resource_index
+[0.381s] creating /FW_Control/src/install/estimatestate/share/ament_index/resource_index/packages
+[0.381s] copying resource/estimatestate -> /FW_Control/src/install/estimatestate/share/ament_index/resource_index/packages
+[0.381s] copying package.xml -> /FW_Control/src/install/estimatestate/share/estimatestate
+[0.381s] running install_egg_info
+[0.382s] Copying ../build/estimatestate/estimatestate.egg-info to /FW_Control/src/install/estimatestate/lib/python3.8/site-packages/estimatestate-0.0.0-py3.8.egg-info
+[0.382s] running install_scripts
+[0.390s] Installing pubtransform script to /FW_Control/src/install/estimatestate/lib/estimatestate
+[0.390s] writing list of installed files to '/FW_Control/src/build/estimatestate/install.log'
+[0.400s] Invoked command in '/FW_Control/src/estimatestate' returned '0': PYTHONPATH=/FW_Control/src/build/estimatestate/prefix_override:/FW_Control/src/install/estimatestate/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/estimatestate build --build-base /FW_Control/src/build/estimatestate/build install --record /FW_Control/src/build/estimatestate/install.log --install-scripts $base/lib/estimatestate --single-version-externally-managed
